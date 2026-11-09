@@ -12,8 +12,9 @@ function Addnewdoctor() {
   let [newdoctor, setNewdoctor] = useState(null)
   function handelSubmit(e){
     e.preventDefault()
-    setNewdoctor({name, age, salary, gender, specialization,id:Date.now()})
-    console.log(newdoctor)
+    let doctor = {name, age, salary, gender, specialization,id:Date.now()}
+    setNewdoctor(doctor)
+    console.log(doctor)
   }
   return (
     <div> 
@@ -25,8 +26,8 @@ function Addnewdoctor() {
         <input value={specialization} onChange={(e)=>setSpecialization(e.target.value)} type="text" placeholder="Enter Specialization" />
         <select value ={gender} onChange={(e)=>setGender(e.target.value)} name="" id="">
           <option value="">Select Gender</option>
-          <option value="">Male</option>
-          <option value="">Female</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
         </select>
         <input value={age} onChange={(e)=>setAge(e.target.value)} type="text" placeholder="Enter Age" />
         <input value={salary} onChange={(e)=>setSalary(e.target.value)} type="text" placeholder="Enter Salary" />
