@@ -2,6 +2,7 @@
 import { useState } from 'react'  
 import Home from './home'
 
+
 function Addnewdoctor() {
   let [name, setName] = useState('')
   let [age, setAge] = useState('')
@@ -34,6 +35,7 @@ function Addnewdoctor() {
     </div>
     <div>
       <Home newdoctor={newdoctor}/>
+      
     </div>
     </div>
     
