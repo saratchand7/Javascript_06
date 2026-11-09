@@ -35,7 +35,6 @@ function Addnewdoctor() {
     </div>
     <div>
       <Home newdoctor={newdoctor}/>
-      
     </div>
     </div>
     
